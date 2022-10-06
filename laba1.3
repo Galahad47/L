@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int h1, min1, h2, min2, h, min, m;
+    cin >> h1 >> min1 >> h2 >> min2;
+    m = (h2 * 60 + min2) - (h1 * 60 + min1);
+    if (m < 0) m += 60 * 24;
+    h = m / 60;
+    min = m % 60;
+    cout << h << ' ' << min;
+    return 0;
+}
