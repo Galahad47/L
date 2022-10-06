@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main() {
+	double a, b, c, v, s;
+	cout << "Сторона а: ";
+	cin >> a;
+	cout << "Сторона b: ";
+	cin >> b;
+	cout << "Сторона с: ";
+	cin >> c;
+	v = a * b * c;
+	s = 2 * (a * b + b * c + a * c);
+	cout << "Объём параллелипиппеда" << v << endl;
+	cout << "Площадь боковой поверхности" << s;
+	return 0;
+}
